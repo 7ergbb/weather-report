@@ -1,6 +1,6 @@
-CREATE TABLE weather ( data timestamp without time zone, temperature real, pressure real);
+CREATE TABLE weather ( days timestamp without time zone, temperature real, pressure real);
 
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-19 01:00:00.000',4.3105345,1007.4)
 ,('2020-05-19 02:00:00.000',5.2705345,1008)
 ,('2020-05-19 03:00:00.000',5.3205347,1008.4)
@@ -12,7 +12,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-19 09:00:00.000',8.820535,1008.9)
 ,('2020-05-19 10:00:00.000',9.870535,1009.2)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-19 11:00:00.000',10.850534,1009.2)
 ,('2020-05-19 12:00:00.000',11.630535,1008.8)
 ,('2020-05-19 13:00:00.000',12.260534,1008.4)
@@ -24,7 +24,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-19 19:00:00.000',10.850534,1009.5)
 ,('2020-05-19 20:00:00.000',10.280535,1009.2)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-19 21:00:00.000',9.180534,1009.5)
 ,('2020-05-19 22:00:00.000',8.190535,1009.6)
 ,('2020-05-19 23:00:00.000',7.2805347,1009.8)
@@ -36,7 +36,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-20 05:00:00.000',3.6705346,1007.4)
 ,('2020-05-20 06:00:00.000',5.200535,1007.3)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-20 07:00:00.000',7.5605345,1007.1)
 ,('2020-05-20 08:00:00.000',9.650535,1006.4)
 ,('2020-05-20 09:00:00.000',10.660535,1005.9)
@@ -48,7 +48,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-20 15:00:00.000',12.640534,1006.3)
 ,('2020-05-20 16:00:00.000',12.420535,1005.7)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-20 17:00:00.000',12.160535,1005.3)
 ,('2020-05-20 18:00:00.000',12.070535,1005.7)
 ,('2020-05-20 19:00:00.000',11.710535,1005.3)
@@ -60,7 +60,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-21 01:00:00.000',7.1305346,1003.3)
 ,('2020-05-21 02:00:00.000',6.5205345,1003.2)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-21 03:00:00.000',5.3605347,1003.1)
 ,('2020-05-21 04:00:00.000',6.350535,1004.4)
 ,('2020-05-21 05:00:00.000',5.890535,1004.2)
@@ -72,7 +72,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-21 11:00:00.000',4.8605347,1007.6)
 ,('2020-05-21 12:00:00.000',5.700535,1007.8)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-21 13:00:00.000',6.7105346,1008.3)
 ,('2020-05-21 14:00:00.000',7.7705345,1008.6)
 ,('2020-05-21 15:00:00.000',8.2705345,1009.1)
@@ -84,7 +84,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-21 21:00:00.000',5.890535,1009.8)
 ,('2020-05-21 22:00:00.000',4.9405346,1009.6)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-21 23:00:00.000',4.6305346,1010)
 ,('2020-05-22 00:00:00.000',4.7505345,1009.2)
 ,('2020-05-22 01:00:00.000',5.010535,1009)
@@ -96,7 +96,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-22 07:00:00.000',5.5905347,1009.9)
 ,('2020-05-22 08:00:00.000',6.0405345,1010.3)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-22 09:00:00.000',6.4205346,1010.7)
 ,('2020-05-22 10:00:00.000',6.9005346,1011.1)
 ,('2020-05-22 11:00:00.000',7.4005346,1011.7)
@@ -108,7 +108,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-22 17:00:00.000',8.000535,1013.4)
 ,('2020-05-22 18:00:00.000',7.7705345,1014.6)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-22 19:00:00.000',7.4805346,1014.7)
 ,('2020-05-22 20:00:00.000',7.0405345,1015.1)
 ,('2020-05-22 21:00:00.000',6.490535,1015.5)
@@ -120,7 +120,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-23 03:00:00.000',4.9405346,1016.9)
 ,('2020-05-23 04:00:00.000',5.1505346,1016.8)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-23 05:00:00.000',5.510535,1016.5)
 ,('2020-05-23 06:00:00.000',6.0305347,1017)
 ,('2020-05-23 07:00:00.000',6.450535,1017.6)
@@ -132,7 +132,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-23 13:00:00.000',9.550534,1019.1)
 ,('2020-05-23 14:00:00.000',9.910535,1019.5)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-23 15:00:00.000',9.8105345,1019.6)
 ,('2020-05-23 16:00:00.000',10.0205345,1019.4)
 ,('2020-05-23 17:00:00.000',10.210535,1019.4)
@@ -144,7 +144,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-23 23:00:00.000',8.390534,1020.5)
 ,('2020-05-24 00:00:00.000',8.140534,1019.9)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-24 01:00:00.000',7.9405346,1020.2)
 ,('2020-05-24 02:00:00.000',7.6905346,1020.4)
 ,('2020-05-24 03:00:00.000',7.370535,1020)
@@ -156,7 +156,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-24 09:00:00.000',7.9805346,1018)
 ,('2020-05-24 10:00:00.000',7.9805346,1018.5)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-24 11:00:00.000',8.290535,1018.1)
 ,('2020-05-24 12:00:00.000',8.840535,1017.4)
 ,('2020-05-24 13:00:00.000',9.910535,1017.6)
@@ -168,7 +168,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-24 19:00:00.000',11.090535,1017.9)
 ,('2020-05-24 20:00:00.000',10.730535,1017.7)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-24 21:00:00.000',10.340535,1018.3)
 ,('2020-05-24 22:00:00.000',9.870535,1018)
 ,('2020-05-24 23:00:00.000',9.5605345,1018)
@@ -180,7 +180,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-25 05:00:00.000',7.7505345,1019.6)
 ,('2020-05-25 06:00:00.000',8.460535,1020.1)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-25 07:00:00.000',9.470534,1020.5)
 ,('2020-05-25 08:00:00.000',11.160535,1020.8)
 ,('2020-05-25 09:00:00.000',13.130535,1020.5)
@@ -192,7 +192,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-25 15:00:00.000',17.560535,1022.5)
 ,('2020-05-25 16:00:00.000',17.720535,1022.5)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-25 17:00:00.000',17.530535,1022.7)
 ,('2020-05-25 18:00:00.000',17.160536,1023.4)
 ,('2020-05-25 19:00:00.000',16.620535,1024.3)
@@ -204,7 +204,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-26 01:00:00.000',13.580535,1026.2)
 ,('2020-05-26 02:00:00.000',13.010534,1026.7)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-26 03:00:00.000',12.360535,1027)
 ,('2020-05-26 04:00:00.000',11.320535,1027.5)
 ,('2020-05-26 05:00:00.000',10.680534,1027.9)
@@ -216,7 +216,7 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-26 11:00:00.000',16.730536,1027.6)
 ,('2020-05-26 12:00:00.000',17.080536,1026.9)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-26 13:00:00.000',16.760536,1027.4)
 ,('2020-05-26 14:00:00.000',16.620535,1028)
 ,('2020-05-26 15:00:00.000',16.830536,1027.5)
@@ -228,6 +228,6 @@ INSERT INTO weather ("data",temperature,pressure) VALUES
 ,('2020-05-26 21:00:00.000',15.050534,1026)
 ,('2020-05-26 22:00:00.000',14.510534,1026.1)
 ;
-INSERT INTO weather ("data",temperature,pressure) VALUES
+INSERT INTO weather (days,temperature,pressure) VALUES
 ('2020-05-26 23:00:00.000',14.170535,1025.8)
 ;
