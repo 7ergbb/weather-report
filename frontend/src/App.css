@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-report{
+    width: 70%;
+    margin-top: 5px;
+    background: white;
+}
+.App-report-control{
+    width: 70%;
+    margin-top: 5px;
+    background: white;
+    padding: 10px 0 10px 0;
+}
+
+.App-report-control label{
+  color: #282c34
+}
+
+.App-link {
+  color: #61dafb;
+}

@@ -2,11 +2,15 @@ import logging
 import os
 from logging.handlers import RotatingFileHandler
 from flask import Flask
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
 
 app = Flask(__name__)
-app.config.from_object('config.Config')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://myuser:mypassword@db/weather_rep'
+app.config['SQLALCHEMY_ECHO'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+CORS(app)
 db = SQLAlchemy(app)
 
 if not app.debug:
@@ -20,7 +24,7 @@ if not app.debug:
     app.logger.setLevel(logging.INFO)
     app.logger.info('Weather report backend startup')
 
-from backend.model import Weather
+from .model import Weather
 
 
 @app.route('/weather/<days>')
