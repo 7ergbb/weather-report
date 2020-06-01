@@ -5,10 +5,10 @@
 7 days weather data were used to build the report.
 Where first collumn - date, second temerature and fird pressure.
 
-20200519T0000	4.510535	1006.9
-20200519T0100	4.3105345	1007.4
-20200519T0200	5.2705345	1008
-20200519T0300	5.3205347	1008.4
+20200519T0000	4.510535	1006.9 \
+20200519T0100	4.3105345	1007.4 \
+20200519T0200	5.2705345	1008 \
+20200519T0300	5.3205347	1008.4 \
 ....
 
 *data obtained from a private API offering weekly free historical data
