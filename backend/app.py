@@ -5,6 +5,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
+from .model import Weather
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://myuser:mypassword@db/weather_rep'
@@ -23,8 +24,6 @@ if not app.debug:
     app.logger.addHandler(file_handler)
     app.logger.setLevel(logging.INFO)
     app.logger.info('Weather report backend startup')
-
-from .model import Weather
 
 
 @app.route('/weather/<days>')
